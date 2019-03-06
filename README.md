@@ -31,5 +31,10 @@ To "clone" an online repository locally on your machine, use `git clone <html>`.
 Once you have navigated into the "cloned" repository it behaves just like any other local repository.
 If the remote repository has changes which are not reflected in your local repository, you can do `git fetch origin` followed by `git merge` to update your local repository.
 `git pull origin` should work the same way as `git fetch origin` followed by `git merge`.
-To send changes on your local repository to the remote repository, use `git push origin`.
+
+To send changes on your local repository to the remote repository, use `git push origin <branch name>`.
 You may need user name and password to submit the changes.
+
+#Notes from Coffee 'N Code event
+Use `git reset --hard <commit hash>` in order to revert a branch to a specific commit.
+
