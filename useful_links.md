@@ -10,3 +10,6 @@ https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 http://codelikethis.com/lessons/git/git_intro#content
 https://www.git-tower.com/learn/git/ebook/en/command-line/basics/getting-ready#start
 http://gitimmersion.com/
+
+# Markdown cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
