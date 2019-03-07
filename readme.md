@@ -48,17 +48,18 @@ If the remote repository has changes which are not reflected in your local repos
 You can monitor and alter the connections to a remote branch using `git remote`, although one is recommended to look at the documentation for detailed information.
 From the Coffee'N'Code Workshop I think that `git remote -v` will show you other connections, `git remote add <email>` will add a connection, and `git remote upstream <email>` will alter where a connection sits in the version control (please read further documentation since this is not a clear explanation).
 
-To send changes on your local repository to the remote repository, use `git push origin <branch name>`. 
+To send changes on your local repository to the 'head' of the branch on the remote repository, use `git push origin HEAD`. 
 You may need user name and password to submit the changes. 
 Recall that it is best practice to never 'push' onto the master branch. Rather, 'push' onto another branch and then use Github to submit a 'pull' request to the master branch. 
 This will allow more version control with better record keeping.
 
-# General workflow
-If you already are connected to a remote repository with your local, then as soon as you start Bash you should run `git fetch origin` to check for differences between your local repo and the remote.  
-Next, be sure you are working on the appropriate branch by running `git checkout <branch other than master>`.  
-Finally, if there are any differences between your local and the remote repository on this branch, you will be told and you can run `git pull` to update your local repository.
-    You can also switch to the master branch and update it by the same process, but remember that you are usually working on a different branch.
-
+After you have used Github to merge branches onto the master, some housekeeping needs to be done.
+You may choose to delete branches on Github that you no longer want to work on.
+Your local repositories will no longer be up-to-date.
+    To check for differences between your local repositories and the remote run `git fetch origin`.
+    Each branch will have to be updated individually, which is accomplished by `git checkout <branch>` and `git pull origin`.
+    You can also switch to the master branch and update it by the same process, but remember that you are usually working on a different branch to maintain the integrity of the master branch.
+To delete the references in your local repository to branches you have deleted on Github, use `git remote prune origin`.
 
 # Services mentioned at Coffee 'N Code event which may be worthing looking into
  
