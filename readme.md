@@ -45,7 +45,8 @@ Once you have navigated into the "cloned" repository it behaves just like any ot
 If the remote repository has changes which are not reflected in your local repository, you can do `git fetch origin` followed by `git merge` to update your local repository.
 `git pull origin` should work the same way as `git fetch origin` followed by `git merge`.
 
-You can monitor and alter the connections to a remote branch using `git remote`, although one is recommended to look at the documentation for detailed information. From the Coffee'N'Code Workshop I think that `git remote -v` will show you other connections, `git remote add <email>` will add a connection, and `git remote upstream <email>` will alter where a connection sits in the version control (please read further documentation since this is not a clear explanation).
+You can monitor and alter the connections to a remote branch using `git remote`, although one is recommended to look at the documentation for detailed information.
+From the Coffee'N'Code Workshop I think that `git remote -v` will show you other connections, `git remote add <email>` will add a connection, and `git remote upstream <email>` will alter where a connection sits in the version control (please read further documentation since this is not a clear explanation).
 
 To send changes on your local repository to the remote repository, use `git push origin <branch name>`.
 You may need user name and password to submit the changes.
@@ -53,8 +54,8 @@ Recall that it is best practice to never 'push' onto the master branch. Rather, 
 This will allow more version control with better record keeping.
 
 # General workflow
-If you already are connected to a remote repository with your local, then as soon as you start Bash you should run `git fetch origin` to check for differences between your local repo and the remote.
-Next, be sure you are working on the appropriate branch by running `git checkout <branch other than master>`.
+If you already are connected to a remote repository with your local, then as soon as you start Bash you should run `git fetch origin` to check for differences between your local repo and the remote. 
+Next, be sure you are working on the appropriate branch by running `git checkout <branch other than master>`. 
 Finally, if there are any differences between your local and the remote repository on this branch, you will be told and you can run `git pull` to update your local repository.
     You can also switch to the master branch and update it by the same process, but remember that you are usually working on a different branch.
 
