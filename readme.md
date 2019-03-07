@@ -9,7 +9,6 @@
     `mv --force <OLD_NAME> <new_name>` renames a file or directory changing capitalization; failing to use the force argument means changes in capitalization will not be picked up by all systems, including Github.
 
 # Git and GitHub for Version Control
-
 General ideas:
 If have not "cloned" a repository from online, then you will first "initialize" a repository on your computer.
 You navigate to the repository then use `git init`.
@@ -60,6 +59,7 @@ Your local repositories will no longer be up-to-date.
     Each branch will have to be updated individually, which is accomplished by `git checkout <branch>` and `git pull origin`.
     You can also switch to the master branch and update it by the same process, but remember that you are usually working on a different branch to maintain the integrity of the master branch.
 To delete the references in your local repository to branches you have deleted on Github, use `git remote prune origin`.
+
 
 # Services mentioned at Coffee 'N Code event which may be worthing looking into
  
