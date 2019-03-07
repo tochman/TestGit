@@ -53,7 +53,6 @@ You may need user name and password to submit the changes.
 Recall that it is best practice to never 'push' onto the master branch. Rather, 'push' onto another branch and then use Github to submit a 'pull' request to the master branch.
 This will allow more version control with better record keeping.
 
-
 # General workflow
 If you already are connected to a remote repository with your local, then as soon as you start Bash you should run `git fetch origin` to check for differences between your local repo and the remote. 
 Next, be sure you are working on the appropriate branch by running `git checkout <branch other than master>`. 
