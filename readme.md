@@ -53,9 +53,15 @@ Recall that it is best practice to never 'push' onto the master branch. Rather, 
 This will allow more version control with better record keeping.
 
 
+# General workflow
+If you already are connected to a remote repository with your local, then as soon as you start Bash you should run `git fetch origin` to check for differences between your local repo and the remote.
+Next, be sure you are working on the appropriate branch by running `git checkout <branch other than master>`.
+Finally, if there are any differences between your local and the remote repository on this branch, you will be told and you can run `git pull` to update your local repository.
+    You can also switch to the master branch and update it by the same process, but remember that you are usually working on a different branch.
+
 
 # Services mentioned at Coffee 'N Code event which may be worthing looking into
  
-* 'Semafor' for testing pull requests on Github before they get merged.
+* 'Semaphore' for testing pull requests on Github before they get merged.
 * 'Selenium Chrome Grabber' for running tests on virtual systems to make sure all parts of an app or website are functional.
 * 'Codessy' for cross-checking code quality/style.
