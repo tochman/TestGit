@@ -10,27 +10,29 @@
 * `mv --force <OLD_NAME> <new_name>` renames a file or directory changing capitalization; failing to use the force argument means changes in capitalization will not be picked up by all systems, including Github.
 
 # Git and GitHub for Version Control
-General ideas:
+## General ideas:
 
-* If have not "cloned" a repository from online, then you will first "initialize" a repository on your computer.
-* You navigate to the repository then use `git init`.
-* This will create some hidden files in the repository which are used by Git in order to track changes made to files in the repository.
+* If have not "cloned" a repository from online, then you will first "initialize" a repository on your computer.  
+   You navigate to the repository then use `git init`.  
+   This will create some hidden files in the repository which are used by Git in order to track changes made to files in the repository.
 
 * `git status` will give you a summary of the status of your local repository.
 
-* You work on files in a "workspace".
-* When you have modified them in ways you want to save, you add them to a "staging area".
-* This is done with `git add <filename>`.
-* `git add .` will add all existing tracked files.
+* You work on files in a "workspace".  
+   When you have modified them in ways you want to save, you add them to a "staging area".  
+      This is done with `git add <filename>`.
+         `git add .` will add all existing tracked files.
 
-* Once you have several changes you want to save permanently, you save them onto your "branch".
-* This is done with `git commit`.
-* `git commit -m 'message'` allows you to leave the commit message in a single line when you commit.
-* `git commit -a` allows you to commit tracked files without "staging" first.
-* If you ever need to revert a branch backwards to an earlier commit, I think you would use `git reset --hard <commit hash>`.
-* You may have several "branches" on any one project.
-* If you have changes but are not ready to commit them, but you need to change branches to do other work before you can finish making the current changes, you can save your working changes with `git stash`.
-* You can retrieve those changes with `git pop` or possibly `git stash apply`.
+* Once you have several changes you want to save permanently, you save them onto your "branch".  
+   This is done with `git commit`.  
+      `git commit -m 'message'` allows you to leave the commit message in a single line when you commit.  
+      `git commit -a` allows you to commit tracked files without "staging" first.  
+      `git commit -am` allows you to do both of the above arguments in one line.  
+   If you ever need to revert a branch backwards to an earlier commit, I think you would use `git reset --hard <commit hash>`.
+
+* You may have several "branches" on any one project.  
+   If you have changes but are not ready to commit them, but you need to change branches to do other work before you can finish making the current changes, you can save your working changes with `git stash`.  
+   You can retrieve those changes with `git pop` or possibly `git stash apply`.
 
 * It is best practice to never work directly on the master branch.
 * Rather, you will create a different branch to do your work on where you will do your staging and committing and only at a much later stage will your branch be merged with the master branch.
