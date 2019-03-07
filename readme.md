@@ -67,6 +67,6 @@ To delete the references in your local repository to branches you have deleted o
 
 # Services mentioned at Coffee 'N Code event which may be worthing looking into
  
-* 'Semaphore' for testing pull requests on Github before they get merged.
-* 'Selenium Chrome Grabber' for running tests on virtual systems to make sure all parts of an app or website are functional.
-* 'Codessy' for cross-checking code quality/style.
+* ['SemaphoreCI'](https://semaphoreci.com/) for testing pull requests on Github before they get merged. Free for open repositorues. Paid for private (closed sourced) repositories
+* 'Selenium' + 'Chrome Driver' (in Ruby) or 'Puppeteer' for running automated tests to make sure all parts of an app or website are functional.
+* ['Codacy'](https://www.codacy.com/) for cross-checking code quality/style.
